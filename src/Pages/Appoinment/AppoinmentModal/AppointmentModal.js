@@ -38,7 +38,7 @@ const AppointmentModal = ({ treatment, selectedDate, setTreatment, refetch }) =>
             .then(data => {
                 if (data.acknowledged) {
                     setTreatment(null);
-                    toast.success('Appointment Successfully Placed');
+                    toast.success('Appointment Successfully Booked');
                     refetch();
                 }
                 else{
